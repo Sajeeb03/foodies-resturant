@@ -1,0 +1,41 @@
+.card img {
+    width: 286px;
+    height: 286px;
+    padding: 7px;
+    border-radius: 12px;
+}
+
+.card {
+    height: 490px;
+    width: 300px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    box-shadow: 2px 3px 8px gray;
+    position: relative;
+}
+
+.card-text {
+    margin-left: 14px;
+}
+
+h3 {
+    margin-top: 5px;
+}
+
+h4 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.btn-order {
+    background-color: orange;
+    border-radius: 12px;
+    padding: 9px 12px;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 20px;
+}
