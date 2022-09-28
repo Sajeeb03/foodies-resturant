@@ -70,7 +70,7 @@ const Home = () => {
             </div>
             <div className="cart-container">
                 {
-                    cart.map(items => console.log(items))
+                    cart.map(items => <h1>{items.quantity} {items.strMeal}</h1>)
                 }
             </div>
         </div>
