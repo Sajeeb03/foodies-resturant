@@ -1,8 +1,8 @@
 import React from 'react';
+import { getTheCart, setTheCart } from '../../utilities/fakeDb';
 import "./Food.css";
-const Food = ({ food }) => {
-    // console.log(food);
-    const { strMealThumb, strMeal, idMeal, strArea } = food;
+const Food = ({ food, btn }) => {
+    const { strMealThumb, strMeal, strArea } = food;
     return (
         <div className='card'>
             <img src={strMealThumb} alt="" />
@@ -10,7 +10,7 @@ const Food = ({ food }) => {
                 <h3>{strMeal}</h3>
                 <p>{strArea}</p>
                 <h4>Price: $100</h4>
-                <button className='btn-order'>Order Now</button>
+                <button onClick={() => btn(food)} className='btn-order'>Order Now</button>
             </div>
         </div>
     );
